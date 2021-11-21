@@ -1,0 +1,2 @@
+# mbti
+funny mbti test 
