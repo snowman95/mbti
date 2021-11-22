@@ -4,15 +4,16 @@
 
 ## Screens
 
-- [ ] Home
+- [x] Home
 
-  - [ ] Load된 Test Data 유형 수만큼 TestTypes 표시
+  - [ ] Header 추가
+  - [x] Load된 Test Data 유형 수만큼 TestTypes 표시
 
-- [ ] TestTypes
+- [x] TestTypes
 
-  - [ ] 이미지+제목 버튼 → TestBook 이동
+  - [x] 이미지+제목 버튼 → TestBook 이동
 
-- [ ] TestBook : 정보확인/시작
+- [ ] TestBook
 
   - [ ] 테스트 정보 표시
   - [ ] 테스트 시작 버튼 → TestPage 1번부터 출력
