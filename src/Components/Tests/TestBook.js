@@ -1,6 +1,8 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-import defaultImg from "../assets/defaultImg.png";
+import defaultImg from "images/defaultImg.png";
+import { useState } from "react";
+import { testDatas } from "api";
 
 const Container = styled.div`
   font-size: 12px;
@@ -35,30 +37,21 @@ const Title = styled.span`
   white-space: nowrap;
 `;
 
-const TestTypes = ({ id, img_path, title, description, page }) => (
-  <Link
-    to={{
-      pathname: `/test_types/${id}`,
-      state: {
-        id,
-        img_path,
-        title,
-      },
-    }}
-  >
+const TestBook = ({ id, img_path, title, description, page }) => {
+  const [data, setData] = useState({ id, img_path, title, description, page });
+
+  if (!data) {
+    setData(testDatas);
+  }
+
+  return (
     <Container>
       <Title>{title}</Title>
       <ImageContainer>
-        <Image
-          bgUrl={
-            img_path
-              ? `https://image.tmdb.org/t/p/w300${img_path}`
-              : `${defaultImg}`
-          }
-        />
+        <Image bgUrl={img_path ? `${img_path}` : `${defaultImg}`} />
       </ImageContainer>
     </Container>
-  </Link>
-);
+  );
+};
 
-export default TestTypes;
+export default TestBook;

@@ -1,70 +1,49 @@
-# Getting Started with Create React App
+# mbti
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+재미로하는 성격유형검사 !
 
-## Available Scripts
+## Screens
 
-In the project directory, you can run:
+- [ ] Home
 
-### `npm start`
+  - [ ] Load된 Test Data 유형 수만큼 TestTypes 표시
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- [ ] TestTypes
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+  - [ ] 이미지+제목 버튼 → TestBook 이동
 
-### `npm test`
+- [ ] TestBook : 정보확인/시작
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+  - [ ] 테스트 정보 표시
+  - [ ] 테스트 시작 버튼 → TestPage 1번부터 출력
 
-### `npm run build`
+- [ ] TestPage
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+  - [ ] 이전/다음 페이지 버튼
+  - [ ] 테스트 진행도 표시
+  - [ ] 내용 표시
+  - [ ] 랜덤 배경 화면
+  - [ ] 선택지에 따른 성격유형 가중치 계산
+  - [ ] 테스트 완료 버튼 → TestResult 이동 or 미진행된 Page 이동
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- [ ] TestResult
+  - [ ] 결과 표시 (이미지+텍스트)
+  - [ ] 테스트 재시도
+  - [ ] Home 화면 돌아가기
+  - [ ] 결과 공유 (카카오톡, 트위터, 페이스북)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## API
 
-### `npm run eject`
+- [ ] Test Datas (object)
+  - [ ] 이미지 (img)
+  - [ ] 제목 텍스트 (text)
+  - [ ] 테스트페이지 (list)
+    - [ ] 선택지1 : 내용 텍스트 (text)
+    - [ ] 선택지2 : 내용 텍스트 (text)
+  - [ ] 성격 유형 가중치 (update 필요)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Flow
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Home → TestTypes 이미지선택 → TestBook 시작버튼 → TestPage 테스트 완료버튼 → TestResult → Home
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- 공유링크 → TestBook 시작버튼 → TestPage 테스트 완료버튼 → TestResult → Home

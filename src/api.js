@@ -1,7 +1,7 @@
 export const testDatas = [
   {
     id: 1,
-    img_path: "assets/defaultImg.png",
+    img_path: "images/testbook.png",
     title: "검사1",
     description: "이 검사는 어쩌고 저쩌고 하다.",
     page: [
@@ -24,7 +24,7 @@ export const testDatas = [
   },
   {
     id: 2,
-    img_path: "assets/defaultImg.png",
+    img_path: "images/testbook.png",
     title: "검사2",
     description: "이 검사는 어쩌고 저쩌고 하다.",
     page: [
@@ -47,7 +47,7 @@ export const testDatas = [
   },
   {
     id: 3,
-    img_path: "assets/defaultImg.png",
+    img_path: "images/testbook.png",
     title: "검사3",
     description: "이 검사는 어쩌고 저쩌고 하다.",
     page: [
@@ -72,7 +72,7 @@ export const testDatas = [
 
 export const resultDatas = {
   id: 1,
-  img_path: "assets/defaultImg.png",
+  img_path: "assets/images/testbook.png",
   title: "검사1",
   description: "어쩌고 저쩌고 유형이다.",
   fact: "팩트폭력",

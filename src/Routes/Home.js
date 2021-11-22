@@ -2,7 +2,7 @@ import Loader from "Components/Loader";
 import { useState, useEffect } from "react";
 import { testDatas } from "../api";
 import styled from "styled-components";
-import TestTypes from "Components/TestTypes";
+import TestTypes from "Components/Tests/TestTypes";
 
 const Container = styled.div`
   display: flex;
@@ -23,13 +23,12 @@ const Home = () => {
   useEffect(() => {
     setData(testDatas);
   }, []);
+
   return (
     <Container>
       <Grid>
         {data ? (
-          testDatas.map((item) => (
-            <TestTypes key={item.id} data={{ ...item }} title />
-          ))
+          data.map((item) => <TestTypes key={item.id} data={{ ...item }} />)
         ) : (
           <Loader />
         )}
